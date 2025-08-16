@@ -26,3 +26,19 @@ if (true) {
 // console.log(blockVar); // ReferenceError (접근 불가능)
 // console.log(anotherBlockVar); // ReferenceError (접근 불가능)
 console.log(functionVar); // 함수 스코프 변수 (접근 가능)
+
+
+// Scope Chain
+const global = '전역';
+
+function outer() {
+    const outerVar = '외부';
+
+    function inner() {
+        const innerVar = '내부';
+        console.log(global);
+    }
+    inner();
+}
+
+outer();
