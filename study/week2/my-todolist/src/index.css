@@ -1,0 +1,13 @@
+/* 전역 리셋/기본값 */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; }
+
+/* Vite 기본 #root 스타일이 있었다면 반드시 제거/무력화 */
+#root {
+  max-width: none;   /* 기본값 무효화 */
+  margin: 0;         /* 기본값 무효화 */
+  padding: 0;        /* 기본값 무효화 */
+  text-align: initial;
+  display: block;    /* 혹시 다른 값이었다면 초기화 */
+}
