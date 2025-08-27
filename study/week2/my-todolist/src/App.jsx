@@ -10,9 +10,37 @@ function App() {
       <header className="header">
         <h1>My Todo List</h1>
       </header>
-
+      <div id="week">이번 주 todolist</div>
       <div className="container">
-        {/* Todo 리스트 컴포넌트 추가 가능 */}
+        
+        <div className="dow">
+          <h2 className="dow-title">일요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">월요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">화요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">수요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">목요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">금요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
+        <div className="dow">
+          <h2 className="dow-title">토요일</h2>
+          <input className="dow-input" placeholder="일정 추가하기"></input>
+        </div>
       </div>
     </div>
   )
